@@ -1,6 +1,6 @@
 # typst-symbols
 
-This module provides definitions of the symbols used in typst
+This package provides definitions of the symbols used in typst
 (<https://typst.app>).  It exports lists of triples, which can
 be converted into maps or other more appropriate forms,
 depending on the use case.  Each triple contains the symbol
