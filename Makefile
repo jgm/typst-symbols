@@ -1,3 +1,7 @@
+build:
+	cabal build
+.PHONY: build
+
 update-symbols: Symbols.hs Emoji.hs
 	mv Symbols.hs src/Typst/Symbols.hs
 	mv Emoji.hs src/Typst/Emoji.hs
