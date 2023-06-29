@@ -1,7 +1,7 @@
 # typst-symbols
 
 This package provides definitions of the symbols used in typst
-(<https://typst.app>).  (Currently version 0.4 is targeted.)
+(<https://typst.app>).  (Currently version 0.5.0 is targeted.)
 
 It exports lists of triples, which can be converted into maps or
 other more appropriate forms, depending on the use case.  Each
