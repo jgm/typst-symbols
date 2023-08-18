@@ -4,6 +4,7 @@ build-depends: base, scalpel, pretty-show, text
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE LambdaCase #-}
 
+import Data.Char (chr)
 import Text.HTML.Scalpel
 import Control.Applicative
 import Text.Show.Pretty
@@ -27,9 +28,12 @@ getSymbolTable arg =
 
   pair = do
     accent <- (== "true") <$> attr "data-accent" "li"
+    name <- T.drop 7 . T.pack <$> attr "id" "li"
+    cp <- attr "data-codepoint" "li"
+
     chroot "button" $ do
-      txt <- T.pack <$> text "span"
       name <- T.pack <$> text "code"
+      let txt = T.singleton $ chr (read cp)
       pure (name, accent, txt)
 
 main = do
