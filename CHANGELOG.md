@@ -1,5 +1,9 @@
 # Revision history for typst-symbols
 
+## 0.1.4
+
+* Add Typst.Shorthands with symbol shorthand table.
+
 ## 0.1.3.1
 
 * Fix symbol-scraping script and symbols for typst 0.7.
