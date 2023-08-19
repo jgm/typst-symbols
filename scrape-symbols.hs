@@ -36,9 +36,29 @@ getSymbolTable arg =
       let txt = T.singleton $ chr (read cp)
       pure (name, accent, txt)
 
+getShorthand :: String -> IO (Maybe [(Text, Text)])
+getShorthand arg =
+  scrapeURLWithConfig
+    Config{ decoder = utf8Decoder, manager = Nothing}
+    ("https://typst.app/docs/reference/symbols/" <> arg <> "/")
+    fetchSymbols
+ where
+  fetchSymbols = chroots ("li" @: [match codepoint]) pair
+
+  codepoint "data-codepoint" _ = True
+  codepoint _ _ = False
+
+  pair = do
+    name <- T.drop 7 . T.pack <$> attr "id" "li"
+    shorthand <- T.pack <$> attr "data-math-shorthand" "li"
+    pure (shorthand, name)
+
 main = do
   args <- getArgs
   case args of
+    "shorthand":_ -> getShorthand "sym" >>=
+                        maybe (error "Got Nothing!")
+                        (pPrint . filter (not . T.null . fst))
     x:_ -> getSymbolTable x >>= maybe (error "Got Nothing!") pPrint
     [] -> putStrLn $ "Provide either sym or emoji as argument"
 
