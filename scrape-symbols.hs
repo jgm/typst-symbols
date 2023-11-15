@@ -1,5 +1,5 @@
 {- cabal:
-build-depends: base, scalpel, pretty-show, text
+build-depends: base, scalpel == 0.6.2, pretty-show, text
 -}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE LambdaCase #-}
