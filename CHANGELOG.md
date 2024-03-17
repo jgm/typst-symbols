@@ -1,5 +1,13 @@
 # Revision history for typst-symbols
 
+## 0.1.6
+
+* Update to typst 0.11.
+
+## 0.1.5
+
+* Update to typst 0.9.
+
 ## 0.1.4
 
 * Add Typst.Shorthands with symbol shorthand table.
