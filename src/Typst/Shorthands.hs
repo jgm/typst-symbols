@@ -16,6 +16,7 @@ mathSymbolShorthands =
   , ( ":=" , "colon.eq" )
   , ( "::=" , "colon.double.eq" )
   , ( "..." , "dots.h" )
+  , ( "~" , "tilde.op" )
   , ( "'" , "prime" )
   , ( "-" , "minus" )
   , ( "=:" , "eq.colon" )
