@@ -1,5 +1,9 @@
 # Revision history for typst-symbols
 
+## 0.1.7
+
+* Update to typst 0.12.
+
 ## 0.1.6
 
 * Update to typst 0.11.
