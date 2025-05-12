@@ -1,5 +1,11 @@
 # Revision history for typst-symbols
 
+## 0.1.8.1
+
+* Revert sorting in scrape-symbols.hs, introduced mistakenly in 0.1.8.
+
+* Regenerate symbol tables, so that defaults for things like `dots` are fixed.
+
 ## 0.1.8
 
 * Update to typst 0.13.
