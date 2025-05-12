@@ -4,7 +4,6 @@ build-depends: base, scalpel == 0.6.2, pretty-show, text
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE LambdaCase #-}
 
-import Data.List (sort)
 import Data.Char (chr)
 import Text.HTML.Scalpel
 import Control.Applicative
@@ -64,6 +63,6 @@ main = do
       mbsyms <- getSymbolTable x
       case mbsyms of
         Nothing -> error "Got nothing!"
-        Just syms -> pPrint (sort syms)
+        Just syms -> pPrint syms
     [] -> putStrLn $ "Provide either sym or emoji as argument"
 
