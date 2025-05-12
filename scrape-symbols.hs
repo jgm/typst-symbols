@@ -4,6 +4,7 @@ build-depends: base, scalpel == 0.6.2, pretty-show, text
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE LambdaCase #-}
 
+import Data.List (sort)
 import Data.Char (chr)
 import Text.HTML.Scalpel
 import Control.Applicative
@@ -59,6 +60,10 @@ main = do
     "shorthand":_ -> getShorthand "sym" >>=
                         maybe (error "Got Nothing!")
                         (pPrint . filter (not . T.null . fst))
-    x:_ -> getSymbolTable x >>= maybe (error "Got Nothing!") pPrint
+    x:_ -> do
+      mbsyms <- getSymbolTable x
+      case mbsyms of
+        Nothing -> error "Got nothing!"
+        Just syms -> pPrint (sort syms)
     [] -> putStrLn $ "Provide either sym or emoji as argument"
 
