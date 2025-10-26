@@ -26,10 +26,17 @@ getSymbolTable arg =
   dataValue "data-value" _ = True
   dataValue _ _ = False
 
+  dropVariationSelector t =
+    case t of
+      [] -> []
+      _ -> if last t == '\65039'
+              then init t
+              else t
+
   pair = do
     accent <- (== "true") <$> attr "data-accent" "li"
     name <- T.drop 7 . T.pack <$> attr "id" "li"
-    val <- attr "data-value" "li"
+    val <- dropVariationSelector <$> attr "data-value" "li"
     pure (name, accent, T.pack val)
 
 getShorthand :: IO (Maybe [(Text, Text)])
