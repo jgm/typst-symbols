@@ -29,9 +29,10 @@ getSymbolTable arg =
   dropVariationSelector t =
     case t of
       [] -> []
-      _ -> if last t == '\65039'
-              then init t
-              else t
+      _ -> case last t of
+             '\65039' -> init t
+             '\65038' -> init t
+             _ -> t
 
   pair = do
     accent <- (== "true") <$> attr "data-accent" "li"
