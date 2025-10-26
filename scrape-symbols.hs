@@ -21,32 +21,28 @@ getSymbolTable arg =
     ("https://typst.app/docs/reference/symbols/" <> arg <> "/")
     fetchSymbols
  where
-  fetchSymbols = chroots ("li" @: [match codepoint]) pair
+  fetchSymbols = chroots ("li" @: [match dataValue]) pair
 
-  codepoint "data-codepoint" _ = True
-  codepoint _ _ = False
+  dataValue "data-value" _ = True
+  dataValue _ _ = False
 
   pair = do
     accent <- (== "true") <$> attr "data-accent" "li"
     name <- T.drop 7 . T.pack <$> attr "id" "li"
-    cp <- attr "data-codepoint" "li"
+    val <- attr "data-value" "li"
+    pure (name, accent, T.pack val)
 
-    chroot "button" $ do
-      name <- T.pack <$> text "code"
-      let txt = T.singleton $ chr (read cp)
-      pure (name, accent, txt)
-
-getShorthand :: String -> IO (Maybe [(Text, Text)])
-getShorthand arg =
+getShorthand :: IO (Maybe [(Text, Text)])
+getShorthand =
   scrapeURLWithConfig
     Config{ decoder = utf8Decoder, manager = Nothing}
-    ("https://typst.app/docs/reference/symbols/" <> arg <> "/")
+    ("https://typst.app/docs/reference/symbols/")
     fetchSymbols
  where
-  fetchSymbols = chroots ("li" @: [match codepoint]) pair
+  fetchSymbols = chroots ("li" @: [match mathShorthand]) pair
 
-  codepoint "data-codepoint" _ = True
-  codepoint _ _ = False
+  mathShorthand "data-math-shorthand" _ = True
+  mathShorthand _ _ = False
 
   pair = do
     name <- T.drop 7 . T.pack <$> attr "id" "li"
@@ -56,13 +52,11 @@ getShorthand arg =
 main = do
   args <- getArgs
   case args of
-    "shorthand":_ -> getShorthand "sym" >>=
-                        maybe (error "Got Nothing!")
-                        (pPrint . filter (not . T.null . fst))
+    [] -> getShorthand >>= maybe (error "Got Nothing!")
+                            (pPrint . filter (not . T.null . fst))
     x:_ -> do
       mbsyms <- getSymbolTable x
       case mbsyms of
         Nothing -> error "Got nothing!"
         Just syms -> pPrint syms
-    [] -> putStrLn $ "Provide either sym or emoji as argument"
 
