@@ -1,5 +1,14 @@
 # Revision history for typst-symbols
 
+## 0.1.9.1
+
+* Fix small regression in 0.1.9, in which variation selector code points
+  were included after some symbols.
+
+## 0.1.9
+
+* Updaet to typst 0.14.
+
 ## 0.1.8.1
 
 * Revert sorting in scrape-symbols.hs, introduced mistakenly in 0.1.8.
