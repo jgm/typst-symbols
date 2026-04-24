@@ -1,9 +1,12 @@
 {- cabal:
 build-depends: base, scalpel == 0.6.2, pretty-show, text
+hs-source-dirs: .
 -}
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE LambdaCase #-}
 
+import Data.Maybe (fromMaybe)
 import Data.Char (chr)
 import Text.HTML.Scalpel
 import Control.Applicative
@@ -11,8 +14,9 @@ import Text.Show.Pretty
 import Data.Text (Text)
 import qualified Data.Text as T
 import System.Environment
+import Text.Read (readMaybe)
 
-type Sym = (Text, Bool, Text)
+#include "Types.hs"
 
 getSymbolTable :: String -> IO (Maybe [Sym])
 getSymbolTable arg =
@@ -35,10 +39,18 @@ getSymbolTable arg =
              _ -> t
 
   pair = do
+    let strToMaybe "" = Nothing
+        strToMaybe s = Just s
     accent <- (== "true") <$> attr "data-accent" "li"
     name <- T.drop 7 . T.pack <$> attr "id" "li"
     val <- dropVariationSelector <$> attr "data-value" "li"
-    pure (name, accent, T.pack val)
+    deprecation <- strToMaybe . T.pack <$> attr "data-deprecation" "li"
+    mathClass <- fromMaybe None . readMaybe <$> attr "data-math-class" "li"
+    pure $ Sym{ symName = name,
+                symIsAccent = accent,
+                symText = T.pack val,
+                symDeprecation = deprecation,
+                symMathClass = mathClass }
 
 getShorthand :: IO (Maybe [(Text, Text)])
 getShorthand =

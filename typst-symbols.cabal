@@ -24,8 +24,6 @@ common warnings
 library
     import:           warnings
     exposed-modules:  Typst.Symbols
-                      Typst.Shorthands
-                      Typst.Emoji
     build-depends:    base >= 4.12 && < 5,
                       text >= 1.0 && < 2.2
     hs-source-dirs:   src
