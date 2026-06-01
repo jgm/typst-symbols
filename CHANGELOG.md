@@ -1,5 +1,16 @@
 # Revision history for typst-symbols
 
+## 0.2
+
+* Reorganize API (breaking API change). Now we only export one
+  module, `Typst.Symbols`. This contains `typstSymbols`,
+  `typstEmojis`, and `mathSymbolShorthands`, as well as types
+  `Sym` and `MathClass`. `typstSymbols` and `typstEmojis` are no
+  longer lists of tuples. Instead, they are lists of `Sym`
+  records, which now include deprecation and math symbol class
+  information. `scrape-symbols.hs` has been changed tot generate
+  the new API. See jgm/texmath#288 for motivation.
+
 ## 0.1.9.1
 
 * Fix small regression in 0.1.9, in which variation selector code points
