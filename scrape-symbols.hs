@@ -65,9 +65,9 @@ getShorthand =
   mathShorthand _ _ = False
 
   pair = do
-    name <- T.drop 7 . T.pack <$> attr "id" "li"
+    val <- T.pack <$> attr "data-value" "li"
     shorthand <- T.pack <$> attr "data-math-shorthand" "li"
-    pure (shorthand, name)
+    pure (shorthand, val)
 
 main = do
   args <- getArgs

@@ -191,14 +191,6 @@ typstSymbols =
       , symText = "\120130"
       }
   , Sym
-      { symName = "Kai"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`Kai` is deprecated, use \975 or `\\u{3c5}` instead"
-      , symMathClass = None
-      , symText = "\975"
-      }
-  , Sym
       { symName = "Kappa"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -465,13 +457,6 @@ typstSymbols =
       , symText = "\1547"
       }
   , Sym
-      { symName = "alef"
-      , symIsAccent = False
-      , symDeprecation = Just "`alef` is deprecated, use `aleph` instead"
-      , symMathClass = None
-      , symText = "\1488"
-      }
-  , Sym
       { symName = "aleph"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -542,70 +527,6 @@ typstSymbols =
       , symText = "\8736"
       }
   , Sym
-      { symName = "angle.l"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`angle.l` is deprecated, use `chevron.l` instead"
-      , symMathClass = Opening
-      , symText = "\10216"
-      }
-  , Sym
-      { symName = "angle.l.curly"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`angle.l` is deprecated, use `chevron.l` instead"
-      , symMathClass = Opening
-      , symText = "\10748"
-      }
-  , Sym
-      { symName = "angle.l.dot"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`angle.l` is deprecated, use `chevron.l` instead"
-      , symMathClass = Opening
-      , symText = "\10641"
-      }
-  , Sym
-      { symName = "angle.l.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`angle.l` is deprecated, use `chevron.l` instead"
-      , symMathClass = Opening
-      , symText = "\10218"
-      }
-  , Sym
-      { symName = "angle.r"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`angle.r` is deprecated, use `chevron.r` instead"
-      , symMathClass = None
-      , symText = "\10217"
-      }
-  , Sym
-      { symName = "angle.r.curly"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`angle.r` is deprecated, use `chevron.r` instead"
-      , symMathClass = None
-      , symText = "\10749"
-      }
-  , Sym
-      { symName = "angle.r.dot"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`angle.r` is deprecated, use `chevron.r` instead"
-      , symMathClass = None
-      , symText = "\10642"
-      }
-  , Sym
-      { symName = "angle.r.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`angle.r` is deprecated, use `chevron.r` instead"
-      , symMathClass = None
-      , symText = "\10219"
-      }
-  , Sym
       { symName = "angle.acute"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -637,14 +558,6 @@ typstSymbols =
       { symName = "angle.obtuse"
       , symIsAccent = False
       , symDeprecation = Nothing
-      , symMathClass = None
-      , symText = "\10662"
-      }
-  , Sym
-      { symName = "angle.oblique"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`angle.oblique` is deprecated, use `angle.obtuse` instead"
       , symMathClass = None
       , symText = "\10662"
       }
@@ -691,15 +604,6 @@ typstSymbols =
       , symText = "\10652"
       }
   , Sym
-      { symName = "angle.right.sq"
-      , symIsAccent = False
-      , symDeprecation =
-          Just
-            "`angle.right.sq` is deprecated, use `angle.right.square` instead"
-      , symMathClass = None
-      , symText = "\10652"
-      }
-  , Sym
       { symName = "angle.s"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -731,15 +635,6 @@ typstSymbols =
       { symName = "angle.spheric.t"
       , symIsAccent = False
       , symDeprecation = Nothing
-      , symMathClass = None
-      , symText = "\10657"
-      }
-  , Sym
-      { symName = "angle.spheric.top"
-      , symIsAccent = False
-      , symDeprecation =
-          Just
-            "`angle.spheric.top` is deprecated, use `angle.spheric.t` instead"
       , symMathClass = None
       , symText = "\10657"
       }
@@ -777,6 +672,13 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8777"
+      }
+  , Sym
+      { symName = "approx.hat"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10863"
       }
   , Sym
       { symName = "arrow.r"
@@ -1647,6 +1549,13 @@ typstSymbols =
       , symText = "\8599"
       }
   , Sym
+      { symName = "arrow.tr.bar"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129209"
+      }
+  , Sym
       { symName = "arrow.tr.double"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -1680,6 +1589,13 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8600"
+      }
+  , Sym
+      { symName = "arrow.br.bar"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129210"
       }
   , Sym
       { symName = "arrow.br.double"
@@ -1717,6 +1633,13 @@ typstSymbols =
       , symText = "\8598"
       }
   , Sym
+      { symName = "arrow.tl.bar"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129208"
+      }
+  , Sym
       { symName = "arrow.tl.double"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -1750,6 +1673,13 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8601"
+      }
+  , Sym
+      { symName = "arrow.bl.bar"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129211"
       }
   , Sym
       { symName = "arrow.bl.double"
@@ -1892,6 +1822,13 @@ typstSymbols =
       , symText = "\8644"
       }
   , Sym
+      { symName = "arrows.rl.long"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129232"
+      }
+  , Sym
       { symName = "arrows.tb"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -1962,24 +1899,6 @@ typstSymbols =
       , symText = "\8258"
       }
   , Sym
-      { symName = "ast.small"
-      , symIsAccent = False
-      , symDeprecation =
-          Just
-            "`ast.small` is deprecated (CJK compatibility character), use \65121 or `\\u{fe61}` instead"
-      , symMathClass = None
-      , symText = "\65121"
-      }
-  , Sym
-      { symName = "ast.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just
-            "`ast.circle` is deprecated, use `convolve.o` or `ast.op.o` instead"
-      , symMathClass = Binary
-      , symText = "\8859"
-      }
-  , Sym
       { symName = "ast.square"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -2018,14 +1937,6 @@ typstSymbols =
       { symName = "backslash.o"
       , symIsAccent = False
       , symDeprecation = Nothing
-      , symMathClass = Binary
-      , symText = "\10680"
-      }
-  , Sym
-      { symName = "backslash.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`backslash.circle` is deprecated, use `backslash.o` instead"
       , symMathClass = Binary
       , symText = "\10680"
       }
@@ -2121,14 +2032,6 @@ typstSymbols =
       , symText = "\10678"
       }
   , Sym
-      { symName = "bar.v.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`bar.circle` is deprecated, use `bar.o` instead"
-      , symMathClass = Binary
-      , symText = "\10678"
-      }
-  , Sym
       { symName = "bar.h"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -2141,13 +2044,6 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8757"
-      }
-  , Sym
-      { symName = "bet"
-      , symIsAccent = False
-      , symDeprecation = Just "`bet` is deprecated, use `beth` instead"
-      , symMathClass = None
-      , symText = "\1489"
       }
   , Sym
       { symName = "beta"
@@ -2185,6 +2081,62 @@ typstSymbols =
       , symText = "\8869"
       }
   , Sym
+      { symName = "bowtie.stroked"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\8904"
+      }
+  , Sym
+      { symName = "bowtie.stroked.big"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\10781"
+      }
+  , Sym
+      { symName = "bowtie.stroked.big.l"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\10197"
+      }
+  , Sym
+      { symName = "bowtie.stroked.big.r"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\10198"
+      }
+  , Sym
+      { symName = "bowtie.stroked.big.l.r"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\10199"
+      }
+  , Sym
+      { symName = "bowtie.filled"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10707"
+      }
+  , Sym
+      { symName = "bowtie.filled.l"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10705"
+      }
+  , Sym
+      { symName = "bowtie.filled.r"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10706"
+      }
+  , Sym
       { symName = "brace.l"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -2199,14 +2151,6 @@ typstSymbols =
       , symText = "\10627"
       }
   , Sym
-      { symName = "brace.l.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`brace.double` is deprecated, use `brace.stroked` instead"
-      , symMathClass = Opening
-      , symText = "\10627"
-      }
-  , Sym
       { symName = "brace.r"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -2217,14 +2161,6 @@ typstSymbols =
       { symName = "brace.r.stroked"
       , symIsAccent = False
       , symDeprecation = Nothing
-      , symMathClass = None
-      , symText = "\10628"
-      }
-  , Sym
-      { symName = "brace.r.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`brace.double` is deprecated, use `brace.stroked` instead"
       , symMathClass = None
       , symText = "\10628"
       }
@@ -2271,15 +2207,6 @@ typstSymbols =
       , symText = "\10214"
       }
   , Sym
-      { symName = "bracket.l.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just
-            "`bracket.double` is deprecated, use `bracket.stroked` instead"
-      , symMathClass = Opening
-      , symText = "\10214"
-      }
-  , Sym
       { symName = "bracket.r"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -2304,15 +2231,6 @@ typstSymbols =
       { symName = "bracket.r.stroked"
       , symIsAccent = False
       , symDeprecation = Nothing
-      , symMathClass = None
-      , symText = "\10215"
-      }
-  , Sym
-      { symName = "bracket.r.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just
-            "`bracket.double` is deprecated, use `bracket.stroked` instead"
       , symMathClass = None
       , symText = "\10215"
       }
@@ -2660,14 +2578,6 @@ typstSymbols =
       , symText = "\9676"
       }
   , Sym
-      { symName = "circle.nested"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`circle.nested` is deprecated, use `compose.o` instead"
-      , symMathClass = Binary
-      , symText = "\8858"
-      }
-  , Sym
       { symName = "co"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -2764,6 +2674,251 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Binary
       , symText = "\8858"
+      }
+  , Sym
+      { symName = "control.ack"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9222"
+      }
+  , Sym
+      { symName = "control.bel"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9223"
+      }
+  , Sym
+      { symName = "control.bs"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9224"
+      }
+  , Sym
+      { symName = "control.can"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9240"
+      }
+  , Sym
+      { symName = "control.cr"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9229"
+      }
+  , Sym
+      { symName = "control.dc.one"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9233"
+      }
+  , Sym
+      { symName = "control.dc.two"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9234"
+      }
+  , Sym
+      { symName = "control.dc.three"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9235"
+      }
+  , Sym
+      { symName = "control.dc.four"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9236"
+      }
+  , Sym
+      { symName = "control.del"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9249"
+      }
+  , Sym
+      { symName = "control.dle"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9232"
+      }
+  , Sym
+      { symName = "control.em"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9241"
+      }
+  , Sym
+      { symName = "control.enq"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9221"
+      }
+  , Sym
+      { symName = "control.eot"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9220"
+      }
+  , Sym
+      { symName = "control.esc"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9243"
+      }
+  , Sym
+      { symName = "control.etb"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9239"
+      }
+  , Sym
+      { symName = "control.etx"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9219"
+      }
+  , Sym
+      { symName = "control.ff"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9228"
+      }
+  , Sym
+      { symName = "control.fs"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9244"
+      }
+  , Sym
+      { symName = "control.gs"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9245"
+      }
+  , Sym
+      { symName = "control.ht"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9225"
+      }
+  , Sym
+      { symName = "control.lf"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9226"
+      }
+  , Sym
+      { symName = "control.nak"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9237"
+      }
+  , Sym
+      { symName = "control.nl"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9252"
+      }
+  , Sym
+      { symName = "control.nul"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9216"
+      }
+  , Sym
+      { symName = "control.rs"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9246"
+      }
+  , Sym
+      { symName = "control.si"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9231"
+      }
+  , Sym
+      { symName = "control.so"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9230"
+      }
+  , Sym
+      { symName = "control.soh"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9217"
+      }
+  , Sym
+      { symName = "control.sp"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9248"
+      }
+  , Sym
+      { symName = "control.stx"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9218"
+      }
+  , Sym
+      { symName = "control.sub"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9242"
+      }
+  , Sym
+      { symName = "control.syn"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9238"
+      }
+  , Sym
+      { symName = "control.us"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9247"
+      }
+  , Sym
+      { symName = "control.vt"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9227"
       }
   , Sym
       { symName = "convolve"
@@ -2892,14 +3047,6 @@ typstSymbols =
       , symText = "\11832"
       }
   , Sym
-      { symName = "dalet"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`dalet` is deprecated, use `daleth` instead"
-      , symMathClass = None
-      , symText = "\1491"
-      }
-  , Sym
       { symName = "daleth"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -2908,7 +3055,7 @@ typstSymbols =
       }
   , Sym
       { symName = "dash.en"
-      , symIsAccent = False
+      , symIsAccent = True
       , symDeprecation = Nothing
       , symMathClass = Punctuation
       , symText = "\8211"
@@ -2952,14 +3099,6 @@ typstSymbols =
       { symName = "dash.o"
       , symIsAccent = False
       , symDeprecation = Nothing
-      , symMathClass = Binary
-      , symText = "\8861"
-      }
-  , Sym
-      { symName = "dash.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`dash.circle` is deprecated, use `dash.o` instead"
       , symMathClass = Binary
       , symText = "\8861"
       }
@@ -3097,14 +3236,6 @@ typstSymbols =
       , symText = "\9856"
       }
   , Sym
-      { symName = "diff"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`diff` is deprecated, use `partial` instead"
-      , symMathClass = None
-      , symText = "\8706"
-      }
-  , Sym
       { symName = "digamma"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -3131,14 +3262,6 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\10684"
-      }
-  , Sym
-      { symName = "div.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`div.circle` is deprecated, use `div.o` instead"
-      , symMathClass = Binary
-      , symText = "\10808"
       }
   , Sym
       { symName = "divides"
@@ -3221,22 +3344,6 @@ typstSymbols =
       { symName = "dot.o.big"
       , symIsAccent = False
       , symDeprecation = Nothing
-      , symMathClass = None
-      , symText = "\10752"
-      }
-  , Sym
-      { symName = "dot.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`dot.circle` is deprecated, use `dot.o` instead"
-      , symMathClass = Binary
-      , symText = "\8857"
-      }
-  , Sym
-      { symName = "dot.circle.big"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`dot.circle.big` is deprecated, use `dot.o.big` instead"
       , symMathClass = None
       , symText = "\10752"
       }
@@ -3381,6 +3488,13 @@ typstSymbols =
       , symText = "\8709"
       }
   , Sym
+      { symName = "emptyset.zero"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\8709\65024"
+      }
+  , Sym
       { symName = "emptyset.arrow.r"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -3444,6 +3558,13 @@ typstSymbols =
       , symText = "="
       }
   , Sym
+      { symName = "eq.ast"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10862"
+      }
+  , Sym
       { symName = "eq.star"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -3458,19 +3579,18 @@ typstSymbols =
       , symText = "\8860"
       }
   , Sym
-      { symName = "eq.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`eq.circle` is deprecated, use `eq.o` instead"
-      , symMathClass = Binary
-      , symText = "\8860"
-      }
-  , Sym
       { symName = "eq.colon"
       , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8789"
+      }
+  , Sym
+      { symName = "eq.dot"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\8784"
       }
   , Sym
       { symName = "eq.dots"
@@ -3562,15 +3682,6 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8799"
-      }
-  , Sym
-      { symName = "eq.small"
-      , symIsAccent = False
-      , symDeprecation =
-          Just
-            "`eq.small` is deprecated (CJK compatibility character), use \65126 or `\\u{fe66}` instead"
-      , symMathClass = None
-      , symText = "\65126"
       }
   , Sym
       { symName = "eq.succ"
@@ -3839,15 +3950,6 @@ typstSymbols =
       , symText = "\8878"
       }
   , Sym
-      { symName = "franc"
-      , symIsAccent = False
-      , symDeprecation =
-          Just
-            "`franc` is deprecated, unadopted symbol for currency no longer in use"
-      , symMathClass = None
-      , symText = "\8355"
-      }
-  , Sym
       { symName = "frown"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -3862,17 +3964,93 @@ typstSymbols =
       , symText = "\947"
       }
   , Sym
-      { symName = "gimel"
+      { symName = "gender.female"
       , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = None
-      , symText = "\1490"
+      , symText = "\9792"
       }
   , Sym
-      { symName = "gimmel"
+      { symName = "gender.female.double"
       , symIsAccent = False
-      , symDeprecation =
-          Just "`gimmel` is deprecated, use `gimel` instead"
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9890"
+      }
+  , Sym
+      { symName = "gender.female.male"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9892"
+      }
+  , Sym
+      { symName = "gender.intersex"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9893"
+      }
+  , Sym
+      { symName = "gender.male"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9794"
+      }
+  , Sym
+      { symName = "gender.male.double"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9891"
+      }
+  , Sym
+      { symName = "gender.male.female"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9892"
+      }
+  , Sym
+      { symName = "gender.male.stroke"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9894"
+      }
+  , Sym
+      { symName = "gender.male.stroke.t"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9896"
+      }
+  , Sym
+      { symName = "gender.male.stroke.r"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9897"
+      }
+  , Sym
+      { symName = "gender.neuter"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9906"
+      }
+  , Sym
+      { symName = "gender.trans"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9895"
+      }
+  , Sym
+      { symName = "gimel"
+      , symIsAccent = False
+      , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\1490"
       }
@@ -3905,19 +4083,18 @@ typstSymbols =
       , symText = "\10689"
       }
   , Sym
-      { symName = "gt.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`gt.circle` is deprecated, use `gt.o` instead"
-      , symMathClass = Binary
-      , symText = "\10689"
-      }
-  , Sym
       { symName = "gt.dot"
       , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8919"
+      }
+  , Sym
+      { symName = "gt.quest"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10876"
       }
   , Sym
       { symName = "gt.approx"
@@ -3927,11 +4104,60 @@ typstSymbols =
       , symText = "\10886"
       }
   , Sym
+      { symName = "gt.arc"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10919"
+      }
+  , Sym
+      { symName = "gt.arc.eq"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10921"
+      }
+  , Sym
+      { symName = "gt.closed"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\8883"
+      }
+  , Sym
+      { symName = "gt.closed.eq"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\8885"
+      }
+  , Sym
+      { symName = "gt.closed.eq.not"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\8941"
+      }
+  , Sym
+      { symName = "gt.closed.not"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\8939"
+      }
+  , Sym
       { symName = "gt.double"
       , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8811"
+      }
+  , Sym
+      { symName = "gt.double.nested"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10914"
       }
   , Sym
       { symName = "gt.eq"
@@ -4018,15 +4244,6 @@ typstSymbols =
       , symText = "\8935"
       }
   , Sym
-      { symName = "gt.small"
-      , symIsAccent = False
-      , symDeprecation =
-          Just
-            "`gt.small` is deprecated (CJK compatibility character), use \65125 or `\\u{fe65}` instead"
-      , symMathClass = None
-      , symText = "\65125"
-      }
-  , Sym
       { symName = "gt.tilde"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -4043,28 +4260,33 @@ typstSymbols =
   , Sym
       { symName = "gt.tri"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just "`gt.tri` is deprecated, use `gt.closed` instead"
       , symMathClass = Relation
       , symText = "\8883"
       }
   , Sym
       { symName = "gt.tri.eq"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just "`gt.tri.eq` is deprecated, use `gt.closed.eq` instead"
       , symMathClass = Relation
       , symText = "\8885"
       }
   , Sym
       { symName = "gt.tri.eq.not"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just
+            "`gt.tri.eq.not` is deprecated, use `gt.closed.eq.not` instead"
       , symMathClass = Relation
       , symText = "\8941"
       }
   , Sym
       { symName = "gt.tri.not"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just "`gt.tri.not` is deprecated, use `gt.closed.not` instead"
       , symMathClass = Relation
       , symText = "\8939"
       }
@@ -4643,14 +4865,6 @@ typstSymbols =
       , symText = "\10777"
       }
   , Sym
-      { symName = "integral.sect"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`integral.sect` is deprecated, use `integral.inter` instead"
-      , symMathClass = None
-      , symText = "\10777"
-      }
-  , Sym
       { symName = "integral.slash"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -4707,6 +4921,13 @@ typstSymbols =
       , symText = "\8745"
       }
   , Sym
+      { symName = "inter.serif"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Binary
+      , symText = "\8745\65024"
+      }
+  , Sym
       { symName = "inter.and"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -4740,6 +4961,13 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Binary
       , symText = "\8851"
+      }
+  , Sym
+      { symName = "inter.sq.serif"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Binary
+      , symText = "\8851\65024"
       }
   , Sym
       { symName = "inter.sq.big"
@@ -4807,28 +5035,32 @@ typstSymbols =
   , Sym
       { symName = "join"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just "`join` is deprecated, use `bowtie.big` instead"
       , symMathClass = None
       , symText = "\10781"
       }
   , Sym
       { symName = "join.r"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just "`join` is deprecated, use `bowtie.big` instead"
       , symMathClass = None
       , symText = "\10198"
       }
   , Sym
       { symName = "join.l"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just "`join` is deprecated, use `bowtie.big` instead"
       , symMathClass = None
       , symText = "\10197"
       }
   , Sym
       { symName = "join.l.r"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just "`join` is deprecated, use `bowtie.big` instead"
       , symMathClass = None
       , symText = "\10199"
       }
@@ -4838,14 +5070,6 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\9795"
-      }
-  , Sym
-      { symName = "kai"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`kai` is deprecated, use \983 or `\\u{3d7}` instead"
-      , symMathClass = None
-      , symText = "\983"
       }
   , Sym
       { symName = "kappa"
@@ -4974,19 +5198,18 @@ typstSymbols =
       , symText = "\10688"
       }
   , Sym
-      { symName = "lt.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`lt.circle` is deprecated, use `lt.o` instead"
-      , symMathClass = Binary
-      , symText = "\10688"
-      }
-  , Sym
       { symName = "lt.dot"
       , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8918"
+      }
+  , Sym
+      { symName = "lt.quest"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10875"
       }
   , Sym
       { symName = "lt.approx"
@@ -4996,11 +5219,60 @@ typstSymbols =
       , symText = "\10885"
       }
   , Sym
+      { symName = "lt.arc"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10918"
+      }
+  , Sym
+      { symName = "lt.arc.eq"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10920"
+      }
+  , Sym
+      { symName = "lt.closed"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\8882"
+      }
+  , Sym
+      { symName = "lt.closed.eq"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\8884"
+      }
+  , Sym
+      { symName = "lt.closed.eq.not"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\8940"
+      }
+  , Sym
+      { symName = "lt.closed.not"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\8938"
+      }
+  , Sym
       { symName = "lt.double"
       , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8810"
+      }
+  , Sym
+      { symName = "lt.double.nested"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10913"
       }
   , Sym
       { symName = "lt.eq"
@@ -5087,15 +5359,6 @@ typstSymbols =
       , symText = "\8934"
       }
   , Sym
-      { symName = "lt.small"
-      , symIsAccent = False
-      , symDeprecation =
-          Just
-            "`lt.small` is deprecated (CJK compatibility character), use \65124 or `\\u{fe64}` instead"
-      , symMathClass = None
-      , symText = "\65124"
-      }
-  , Sym
       { symName = "lt.tilde"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -5112,28 +5375,33 @@ typstSymbols =
   , Sym
       { symName = "lt.tri"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just "`lt.tri` is deprecated, use `lt.closed` instead"
       , symMathClass = Relation
       , symText = "\8882"
       }
   , Sym
       { symName = "lt.tri.eq"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just "`lt.tri.eq` is deprecated, use `lt.closed.eq` instead"
       , symMathClass = Relation
       , symText = "\8884"
       }
   , Sym
       { symName = "lt.tri.eq.not"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just
+            "`lt.tri.eq.not` is deprecated, use `lt.closed.eq.not` instead"
       , symMathClass = Relation
       , symText = "\8940"
       }
   , Sym
       { symName = "lt.tri.not"
       , symIsAccent = False
-      , symDeprecation = Nothing
+      , symDeprecation =
+          Just "`lt.tri.not` is deprecated, use `lt.closed.not` instead"
       , symMathClass = Relation
       , symText = "\8938"
       }
@@ -5171,6 +5439,20 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\8380"
+      }
+  , Sym
+      { symName = "mapsfrom"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\8612"
+      }
+  , Sym
+      { symName = "mapsfrom.long"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10235"
       }
   , Sym
       { symName = "mapsto"
@@ -5211,14 +5493,6 @@ typstSymbols =
       { symName = "minus.o"
       , symIsAccent = False
       , symDeprecation = Nothing
-      , symMathClass = Binary
-      , symText = "\8854"
-      }
-  , Sym
-      { symName = "minus.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`minus.circle` is deprecated, use `minus.o` instead"
       , symMathClass = Binary
       , symText = "\8854"
       }
@@ -5461,6 +5735,13 @@ typstSymbols =
       , symText = "\8709"
       }
   , Sym
+      { symName = "nothing.zero"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\8709\65024"
+      }
+  , Sym
       { symName = "nothing.arrow.r"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -5594,14 +5875,6 @@ typstSymbols =
       , symText = "\10679"
       }
   , Sym
-      { symName = "parallel.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`parallel.circle` is deprecated, use `parallel.o` instead"
-      , symMathClass = Binary
-      , symText = "\10679"
-      }
-  , Sym
       { symName = "parallel.eq"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -5693,14 +5966,6 @@ typstSymbols =
       , symText = "\10629"
       }
   , Sym
-      { symName = "paren.l.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`paren.double` is deprecated, use `paren.stroked` instead"
-      , symMathClass = Opening
-      , symText = "\10629"
-      }
-  , Sym
       { symName = "paren.r"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -5725,14 +5990,6 @@ typstSymbols =
       { symName = "paren.r.stroked"
       , symIsAccent = False
       , symDeprecation = Nothing
-      , symMathClass = None
-      , symText = "\10630"
-      }
-  , Sym
-      { symName = "paren.r.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`paren.double` is deprecated, use `paren.stroked` instead"
       , symMathClass = None
       , symText = "\10630"
       }
@@ -5763,6 +6020,13 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "$"
+      }
+  , Sym
+      { symName = "pee"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Alphabetic
+      , symText = "\8472"
       }
   , Sym
       { symName = "penta.stroked"
@@ -5810,14 +6074,6 @@ typstSymbols =
       { symName = "perp.o"
       , symIsAccent = False
       , symDeprecation = Nothing
-      , symMathClass = Binary
-      , symText = "\10681"
-      }
-  , Sym
-      { symName = "perp.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`perp.circle` is deprecated, use `perp.o` instead"
       , symMathClass = Binary
       , symText = "\10681"
       }
@@ -5885,14 +6141,6 @@ typstSymbols =
       , symText = "\295"
       }
   , Sym
-      { symName = "planck.reduce"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`planck.reduce` is deprecated, use `planck` instead"
-      , symMathClass = None
-      , symText = "\295"
-      }
-  , Sym
       { symName = "plus"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -5935,30 +6183,6 @@ typstSymbols =
       , symText = "\10753"
       }
   , Sym
-      { symName = "plus.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`plus.circle` is deprecated, use `plus.o` instead"
-      , symMathClass = Binary
-      , symText = "\8853"
-      }
-  , Sym
-      { symName = "plus.circle.arrow"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`plus.circle` is deprecated, use `plus.o` instead"
-      , symMathClass = Relation
-      , symText = "\10228"
-      }
-  , Sym
-      { symName = "plus.circle.big"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`plus.circle` is deprecated, use `plus.o` instead"
-      , symMathClass = None
-      , symText = "\10753"
-      }
-  , Sym
       { symName = "plus.dot"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -5980,15 +6204,6 @@ typstSymbols =
       , symText = "\177"
       }
   , Sym
-      { symName = "plus.small"
-      , symIsAccent = False
-      , symDeprecation =
-          Just
-            "`plus.small` is deprecated (CJK compatibility character), use \65122 or `\\u{fe62}` instead"
-      , symMathClass = None
-      , symText = "\65122"
-      }
-  , Sym
       { symName = "plus.square"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -6008,6 +6223,13 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Binary
       , symText = "\10747"
+      }
+  , Sym
+      { symName = "plus.hat"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Binary
+      , symText = "\10787"
       }
   , Sym
       { symName = "pound"
@@ -6325,38 +6547,6 @@ typstSymbols =
       , symText = "\8250"
       }
   , Sym
-      { symName = "quote.angle.l.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`quote.angle` is deprecated, use `quote.chevron` instead"
-      , symMathClass = None
-      , symText = "\171"
-      }
-  , Sym
-      { symName = "quote.angle.l.single"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`quote.angle` is deprecated, use `quote.chevron` instead"
-      , symMathClass = None
-      , symText = "\8249"
-      }
-  , Sym
-      { symName = "quote.angle.r.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`quote.angle` is deprecated, use `quote.chevron` instead"
-      , symMathClass = None
-      , symText = "\187"
-      }
-  , Sym
-      { symName = "quote.angle.r.single"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`quote.angle` is deprecated, use `quote.chevron` instead"
-      , symMathClass = None
-      , symText = "\8250"
-      }
-  , Sym
       { symName = "quote.high.double"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -6497,6 +6687,13 @@ typstSymbols =
       , symText = "\6107"
       }
   , Sym
+      { symName = "riyal"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\8385"
+      }
+  , Sym
       { symName = "rlm"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -6544,62 +6741,6 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\9796"
-      }
-  , Sym
-      { symName = "sect"
-      , symIsAccent = False
-      , symDeprecation = Just "`sect` is deprecated, use `inter` instead"
-      , symMathClass = Binary
-      , symText = "\8745"
-      }
-  , Sym
-      { symName = "sect.and"
-      , symIsAccent = False
-      , symDeprecation = Just "`sect` is deprecated, use `inter` instead"
-      , symMathClass = Binary
-      , symText = "\10820"
-      }
-  , Sym
-      { symName = "sect.big"
-      , symIsAccent = False
-      , symDeprecation = Just "`sect` is deprecated, use `inter` instead"
-      , symMathClass = None
-      , symText = "\8898"
-      }
-  , Sym
-      { symName = "sect.dot"
-      , symIsAccent = False
-      , symDeprecation = Just "`sect` is deprecated, use `inter` instead"
-      , symMathClass = Binary
-      , symText = "\10816"
-      }
-  , Sym
-      { symName = "sect.double"
-      , symIsAccent = False
-      , symDeprecation = Just "`sect` is deprecated, use `inter` instead"
-      , symMathClass = Binary
-      , symText = "\8914"
-      }
-  , Sym
-      { symName = "sect.sq"
-      , symIsAccent = False
-      , symDeprecation = Just "`sect` is deprecated, use `inter` instead"
-      , symMathClass = Binary
-      , symText = "\8851"
-      }
-  , Sym
-      { symName = "sect.sq.big"
-      , symIsAccent = False
-      , symDeprecation = Just "`sect` is deprecated, use `inter` instead"
-      , symMathClass = None
-      , symText = "\10757"
-      }
-  , Sym
-      { symName = "sect.sq.double"
-      , symIsAccent = False
-      , symDeprecation = Just "`sect` is deprecated, use `inter` instead"
-      , symMathClass = Binary
-      , symText = "\10830"
       }
   , Sym
       { symName = "section"
@@ -6700,14 +6841,6 @@ typstSymbols =
       , symText = "\10647"
       }
   , Sym
-      { symName = "shell.l.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`shell.double` is deprecated, use `shell.stroked` instead"
-      , symMathClass = Opening
-      , symText = "\10220"
-      }
-  , Sym
       { symName = "shell.r"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -6729,14 +6862,6 @@ typstSymbols =
       , symText = "\10648"
       }
   , Sym
-      { symName = "shell.r.double"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`shell.double` is deprecated, use `shell.stroked` instead"
-      , symMathClass = None
-      , symText = "\10221"
-      }
-  , Sym
       { symName = "shell.t"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -6749,14 +6874,6 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\9185"
-      }
-  , Sym
-      { symName = "shin"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`shin` is deprecated, perhaps you meant to use `sha` instead"
-      , symMathClass = None
-      , symText = "\1513"
       }
   , Sym
       { symName = "sigma"
@@ -6934,6 +7051,13 @@ typstSymbols =
       , symText = "\8202"
       }
   , Sym
+      { symName = "spacebar"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\9251"
+      }
+  , Sym
       { symName = "square.stroked"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -7046,6 +7170,27 @@ typstSymbols =
       , symText = "\8834"
       }
   , Sym
+      { symName = "subset.approx"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10953"
+      }
+  , Sym
+      { symName = "subset.closed"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10959"
+      }
+  , Sym
+      { symName = "subset.closed.eq"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10961"
+      }
+  , Sym
       { symName = "subset.dot"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -7065,6 +7210,13 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8838"
+      }
+  , Sym
+      { symName = "subset.eq.dot"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10947"
       }
   , Sym
       { symName = "subset.eq.not"
@@ -7088,6 +7240,13 @@ typstSymbols =
       , symText = "\8930"
       }
   , Sym
+      { symName = "subset.equiv"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10949"
+      }
+  , Sym
       { symName = "subset.neq"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -7095,11 +7254,25 @@ typstSymbols =
       , symText = "\8842"
       }
   , Sym
+      { symName = "subset.nequiv"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10955"
+      }
+  , Sym
       { symName = "subset.not"
       , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8836"
+      }
+  , Sym
+      { symName = "subset.plus"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10943"
       }
   , Sym
       { symName = "subset.sq"
@@ -7114,6 +7287,20 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8932"
+      }
+  , Sym
+      { symName = "subset.tilde"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10951"
+      }
+  , Sym
+      { symName = "subset.times"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10945"
       }
   , Sym
       { symName = "succ"
@@ -7291,6 +7478,27 @@ typstSymbols =
       , symText = "\8835"
       }
   , Sym
+      { symName = "supset.approx"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10954"
+      }
+  , Sym
+      { symName = "supset.closed"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10960"
+      }
+  , Sym
+      { symName = "supset.closed.eq"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10962"
+      }
+  , Sym
       { symName = "supset.dot"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -7310,6 +7518,13 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8839"
+      }
+  , Sym
+      { symName = "supset.eq.dot"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10948"
       }
   , Sym
       { symName = "supset.eq.not"
@@ -7333,6 +7548,13 @@ typstSymbols =
       , symText = "\8931"
       }
   , Sym
+      { symName = "supset.equiv"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10950"
+      }
+  , Sym
       { symName = "supset.neq"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -7340,11 +7562,25 @@ typstSymbols =
       , symText = "\8843"
       }
   , Sym
+      { symName = "supset.nequiv"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10956"
+      }
+  , Sym
       { symName = "supset.not"
       , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8837"
+      }
+  , Sym
+      { symName = "supset.plus"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10944"
       }
   , Sym
       { symName = "supset.sq"
@@ -7359,6 +7595,20 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8933"
+      }
+  , Sym
+      { symName = "supset.tilde"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10952"
+      }
+  , Sym
+      { symName = "supset.times"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10946"
       }
   , Sym
       { symName = "tack.r"
@@ -7391,6 +7641,15 @@ typstSymbols =
   , Sym
       { symName = "tack.r.double"
       , symIsAccent = False
+      , symDeprecation =
+          Just
+            "`tack.double` is deprecated, use repeated letters instead, e.g., `tack.rr`"
+      , symMathClass = Relation
+      , symText = "\8872"
+      }
+  , Sym
+      { symName = "tack.rr"
+      , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8872"
@@ -7398,9 +7657,25 @@ typstSymbols =
   , Sym
       { symName = "tack.r.double.not"
       , symIsAccent = False
+      , symDeprecation =
+          Just
+            "`tack.double` is deprecated, use repeated letters instead, e.g., `tack.rr.not`"
+      , symMathClass = Relation
+      , symText = "\8877"
+      }
+  , Sym
+      { symName = "tack.rr.not"
+      , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\8877"
+      }
+  , Sym
+      { symName = "tack.rrr"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Relation
+      , symText = "\10978"
       }
   , Sym
       { symName = "tack.l"
@@ -7426,6 +7701,15 @@ typstSymbols =
   , Sym
       { symName = "tack.l.double"
       , symIsAccent = False
+      , symDeprecation =
+          Just
+            "`tack.double` is deprecated, use repeated letters instead, e.g., `tack.ll`"
+      , symMathClass = Relation
+      , symText = "\10980"
+      }
+  , Sym
+      { symName = "tack.ll"
+      , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
       , symText = "\10980"
@@ -7446,6 +7730,15 @@ typstSymbols =
       }
   , Sym
       { symName = "tack.t.double"
+      , symIsAccent = False
+      , symDeprecation =
+          Just
+            "`tack.double` is deprecated, use repeated letters instead, e.g., `tack.tt`"
+      , symMathClass = Relation
+      , symText = "\10987"
+      }
+  , Sym
+      { symName = "tack.tt"
       , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
@@ -7474,6 +7767,15 @@ typstSymbols =
       }
   , Sym
       { symName = "tack.b.double"
+      , symIsAccent = False
+      , symDeprecation =
+          Just
+            "`tack.double` is deprecated, use repeated letters instead, e.g., `tack.bb`"
+      , symMathClass = Relation
+      , symText = "\10986"
+      }
+  , Sym
+      { symName = "tack.bb"
       , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Relation
@@ -7679,22 +7981,6 @@ typstSymbols =
       { symName = "times.o.big"
       , symIsAccent = False
       , symDeprecation = Nothing
-      , symMathClass = None
-      , symText = "\10754"
-      }
-  , Sym
-      { symName = "times.circle"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`times.circle` is deprecated, use `times.o` instead"
-      , symMathClass = Binary
-      , symText = "\8855"
-      }
-  , Sym
-      { symName = "times.circle.big"
-      , symIsAccent = False
-      , symDeprecation =
-          Just "`times.circle` is deprecated, use `times.o` instead"
       , symMathClass = None
       , symText = "\10754"
       }
@@ -7979,11 +8265,25 @@ typstSymbols =
       , symText = "\9666"
       }
   , Sym
+      { symName = "underscore"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "_"
+      }
+  , Sym
       { symName = "union"
       , symIsAccent = False
       , symDeprecation = Nothing
       , symMathClass = Binary
       , symText = "\8746"
+      }
+  , Sym
+      { symName = "union.serif"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Binary
+      , symText = "\8746\65024"
       }
   , Sym
       { symName = "union.arrow"
@@ -8054,6 +8354,13 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = Binary
       , symText = "\8852"
+      }
+  , Sym
+      { symName = "union.sq.serif"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = Binary
+      , symText = "\8852\65024"
       }
   , Sym
       { symName = "union.sq.big"
@@ -8159,6 +8466,20 @@ typstSymbols =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\165"
+      }
+  , Sym
+      { symName = "zero"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "0"
+      }
+  , Sym
+      { symName = "zero.slashed"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "0\65024"
       }
   , Sym
       { symName = "zeta"
@@ -8903,6 +9224,13 @@ typstEmojis =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\128693"
+      }
+  , Sym
+      { symName = "bigfoot"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129736"
       }
   , Sym
       { symName = "bike"
@@ -10704,6 +11032,13 @@ typstEmojis =
       , symText = "\127744"
       }
   , Sym
+      { symName = "dancing.ballet"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129489\8205\129648"
+      }
+  , Sym
       { symName = "dancing.man"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -11269,6 +11604,13 @@ typstEmojis =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\129400"
+      }
+  , Sym
+      { symName = "face.distorted"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129770"
       }
   , Sym
       { symName = "face.distress"
@@ -12011,6 +12353,13 @@ typstEmojis =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\127905"
+      }
+  , Sym
+      { symName = "fightcloud"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129775"
       }
   , Sym
       { symName = "filebox"
@@ -13630,6 +13979,13 @@ typstEmojis =
       , symText = "\129684"
       }
   , Sym
+      { symName = "landslide"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\128728"
+      }
+  , Sym
       { symName = "laptop"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -14699,6 +15055,13 @@ typstEmojis =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\129447"
+      }
+  , Sym
+      { symName = "orca"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129741"
       }
   , Sym
       { symName = "otter"
@@ -17221,6 +17584,13 @@ typstEmojis =
       , symText = "\128228"
       }
   , Sym
+      { symName = "treasure"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129678"
+      }
+  , Sym
       { symName = "tree.deciduous"
       , symIsAccent = False
       , symDeprecation = Nothing
@@ -17310,6 +17680,13 @@ typstEmojis =
       , symDeprecation = Nothing
       , symMathClass = None
       , symText = "\129484"
+      }
+  , Sym
+      { symName = "trombone"
+      , symIsAccent = False
+      , symDeprecation = Nothing
+      , symMathClass = None
+      , symText = "\129674"
       }
   , Sym
       { symName = "trophy"
@@ -17850,45 +18227,46 @@ typstEmojis =
 mathSymbolShorthands :: [(Text, Text)]
 mathSymbolShorthands =
 
-  [ ( "..." , "dots.h" )
-  , ( "-" , "minus" )
-  , ( "->" , "arrow.r" )
-  , ( "|->" , "arrow.r.bar" )
-  , ( "=>" , "arrow.r.double" )
-  , ( "|=>" , "arrow.r.double.bar" )
-  , ( "==>" , "arrow.r.double.long" )
-  , ( "-->" , "arrow.r.long" )
-  , ( "~~>" , "arrow.r.long.squiggly" )
-  , ( "~>" , "arrow.r.squiggly" )
-  , ( ">->" , "arrow.r.tail" )
-  , ( "->>" , "arrow.r.twohead" )
-  , ( "<-" , "arrow.l" )
-  , ( "<==" , "arrow.l.double.long" )
-  , ( "<--" , "arrow.l.long" )
-  , ( "<~~" , "arrow.l.long.squiggly" )
-  , ( "<~" , "arrow.l.squiggly" )
-  , ( "<-<" , "arrow.l.tail" )
-  , ( "<<-" , "arrow.l.twohead" )
-  , ( "<=>" , "arrow.l.r.double" )
-  , ( "<==>" , "arrow.l.r.double.long" )
-  , ( "<-->" , "arrow.l.r.long" )
-  , ( "*" , "ast.op" )
-  , ( "||" , "bar.v.double" )
-  , ( "[|" , "bracket.l.stroked" )
-  , ( "|]" , "bracket.r.stroked" )
-  , ( ":=" , "colon.eq" )
-  , ( "::=" , "colon.double.eq" )
-  , ( "..." , "dots.h" )
-  , ( "=:" , "eq.colon" )
-  , ( "!=" , "eq.not" )
-  , ( ">>" , "gt.double" )
-  , ( ">=" , "gt.eq" )
-  , ( ">>>" , "gt.triple" )
-  , ( "<<" , "lt.double" )
-  , ( "<=" , "lt.eq" )
-  , ( "<<<" , "lt.triple" )
-  , ( "-" , "minus" )
-  , ( "~" , "tilde.op" )
+  [ ( "..." , "\8230" )
+  , ( "-" , "\8722" )
+  , ( "..." , "\8230" )
+  , ( "-" , "\8722" )
+  , ( "*" , "\8727" )
+  , ( "~" , "\8764" )
+  , ( "!=" , "\8800" )
+  , ( ":=" , "\8788" )
+  , ( "::=" , "\10868" )
+  , ( "=:" , "\8789" )
+  , ( "<<" , "\8810" )
+  , ( "<<<" , "\8920" )
+  , ( ">>" , "\8811" )
+  , ( ">>>" , "\8921" )
+  , ( "<=" , "\8804" )
+  , ( ">=" , "\8805" )
+  , ( "->" , "\8594" )
+  , ( "-->" , "\10230" )
+  , ( "|->" , "\8614" )
+  , ( ">->" , "\8611" )
+  , ( "->>" , "\8608" )
+  , ( "<-" , "\8592" )
+  , ( "<--" , "\10229" )
+  , ( "<-<" , "\8610" )
+  , ( "<<-" , "\8606" )
+  , ( "<->" , "\8596" )
+  , ( "<-->" , "\10231" )
+  , ( "~>" , "\8669" )
+  , ( "~~>" , "\10239" )
+  , ( "<~" , "\8668" )
+  , ( "<~~" , "\11059" )
+  , ( "=>" , "\8658" )
+  , ( "|=>" , "\10503" )
+  , ( "==>" , "\10233" )
+  , ( "<==" , "\10232" )
+  , ( "<=>" , "\8660" )
+  , ( "<==>" , "\10234" )
+  , ( "[|" , "\10214" )
+  , ( "|]" , "\10215" )
+  , ( "||" , "\8214" )
   ]
 
 
