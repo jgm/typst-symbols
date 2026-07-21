@@ -1,5 +1,13 @@
 # Revision history for typst-symbols
 
+## 0.3
+
+* Updated to 0.15 symbols.
+
+* [API change] Changed `mathShorthands` so that the second item in
+  the pair is a unicode character rather than a symbol name.
+  (The symbol name is no longer available from the site.)
+
 ## 0.2
 
 * Reorganize API (breaking API change). Now we only export one
